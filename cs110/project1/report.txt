@@ -1,0 +1,85 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<2>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<1>>>
+
+3. Did you receive help from anyone? List their names, status (classmate,
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Day of the Week)
+      Approach: Directly convert provided math to code.
+
+      Issues and resolution: Results were coming up close but not quite to expectations, forgot to use floored division.
+      Resolved by using floored divison, like directions stated.
+   Problem 2 (Mercator Projection)
+      Approach: Directly convert provided math to code.
+
+      Issues and resolution: Results were coming up completely differently for longitude, forgot to convert to radians.
+      Resolved by converting to radians, like directions stated.
+
+   Problem 3 (Great Circle Distance)
+      Approach: Directly convert provided math to code.
+
+      Issues and resolution: Was getting confused between variable names and provided math.
+      Resolved by changing variable names from "tmp1" and "tmp2" and so on to "x1" and "y1" and so on.
+
+   Problem 4 (Wind Chill)
+      Approach: Directly convert provided math to code.
+
+      Issues and resolution: Code ran first try.
+      Resolved by intentionally breaking, then resolving code. Code should never run first try.
+
+   Problem 5 (Gravitational Force)
+      Approach: Directly converted provided math to code.
+
+      Issues and resolution: Code ran first try.
+      Resolved by intentionally breaking, then resolving code. Code should never run first try.
+
+   Problem 6 (Snell's Law)
+      Approach: Solved math to equate theta2, then converted to code.
+
+      Issues and resolution: Results were appearing significantly smaller than expected, recognized as radians instead of degrees.
+      Resolved by converting back to degrees, like directions stated.
+
+   Problem 7 (Gambler's Ruin)
+      Approach: Directly convert provided math to code.
+
+      Issues and resolution: Results were coming up extremely differently than expected. Turns out, one variable was calling the 1st arg instead of the 3rd.
+      Resolved by correcting the typo of sys.argv[1] to sys.argv[3].
+
+   Problem 8 (Waiting Time)
+      Approach: Directly convert provided math to code.
+
+      Issues and resolution: Used lambda as a variable name, realized this was bad practice as lambda is already a keyword.
+      Resolved by changing lambda as a variable to lambdaVariable to not conflict with keyword.
+
+   Problem 9 (Die Roll)
+      Approach: Think of math needed, then convert to code.
+
+      Issues and resolution: Answer was too easy to write as a one-liner.
+      Resolved by expanding code as a comment to show an alternative method.
+
+   Problem 10 (Three Sort)
+      Approach: Add all digits and subtract the two known ones, and you will be left with the third (middle).
+
+      Issues and resolution: I kept wanting to use lists and that made me sad.
+      Resolved by writing a really easy solution using lists in the comments.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   It's always fun having some sort of challenge or problem to solve while coding!

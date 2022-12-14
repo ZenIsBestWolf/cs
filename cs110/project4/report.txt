@@ -1,0 +1,90 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<10>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+   Professor Yee      Professor    Regarding keygen in rsa.py, via Piazza
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (RSA Library)
+      Approach: I broke down the given equations into code format,
+      getting two random primes to make one key, calculating the totient
+      and appropriate other primes to generate a private key.
+      This required some logic statements to prevent edge cases (like
+      when two primes were the same and to prevent the totient from being
+      divisible by the random prime).
+
+      I was even able to reuse some of my code from Project 2, slightly modified
+      for the _primes function.
+
+      Issues and resolution: Two main issues were popping up when trying to make this method.
+      1. Trouble generating the private key
+      - I did not understand the math necessary to programmatically calculate a private key, so
+      I tried brute-forcing one, because I assumed they were all prime. This of course is not true,
+      inefficient, and sometimes will result in no private key. After consulting via Piazza, I was
+      pointed in the right direction on what to think about to mathematically calculate a private key
+      (and also informed not all keys were to be prime), and resolved that one.
+      1a. While I was correct, Gradescope runs on an outdated version of Python that doesn't support my
+      solution, so I had to come up with a slower and less effective one, that just iterates. This is lame!
+      2. Very rarely, a private key would fail to generate.
+      - I still had some issues with private key generation, and I was bewildered as they happened
+      extremely infrequently. It turns out that when I was checking to make sure the totient could not
+      be divided by the randomly selected prime, I was actually checking if the randomly selected prime could
+      be divided by the totient (swapped the order of the equation). I developed a whole testing script and
+      tried to find patterns only to realize it was the equivalent of a spelling mistake. Again via Piazza
+      I was pointed to the fact that I had a "very small bug" within the verification. Once I reread the line
+      of code 5 times, I saw the issue and corrected it.
+
+      After submitting to Gradescope for the first time, it appears I did not understand the _sample definition.
+      It was simply running _choice k times, when in reality was supposed to be more complex. I still don't know
+      why it is needed though.
+
+   Problem 2 (Keygen Program)
+      Approach: Took two integers as input, passed those to the keygen function in the rsa library,
+      and then looped through the outputted keys, printing it with a writeln statement.
+
+      Issues and resolution: For some reason, Gradescope refuses to acknowledge my outputs, claiming it's unpackable.
+      It turns out a leading space is required for it to be readable. Oops! I had been stripping it out.
+
+   Problem 3 (Encryption Program)
+      Approach: Ingest strings using stdio.readLine() in order to preserve whitespace (re-adding the newline stripped by the function)
+      Then, each individual character (represented by its numerical equivalent) is passed to the rsa.encrypt function with the provided keys
+      in the program arguments. This returns a new number, which is converted to binary.
+
+      Issues and resolution: I ran into a lot of issues regarding whitespace, because the readString function splits by
+      whitespace, which is really annoying. To mitigate this I use a for loop that just concatenates the array with spaces.
+      This creates one major issue: a newline (\n) is changed to a space. I am unaware of how to solve this, as when I make
+      an attempt to, it's simply converted to a string of "\n", meaning a backslash and an n char. This is incredibly frustrating.
+      As far as I'm concerned, it's just a limitation of the implementation of the stdio library. If we were allowed, I could probably
+      just write my own temporary readStrings function to fix this, being a modified form of the one in stdio.
+
+      11/3/22: I have since solved this! After reviewing the stdio.py library, I decided to re-attempt with the readLine
+      function of stdio, and noticed it strips a \n at the end of the string. Since it ticks every time a \n is present,
+      I can just re-add that in my code. One while loop and concatenation later, tada! Everything works as intended.
+
+   Problem 4 (Decryption Program)
+      Approach: Ingest one string while stdio is not empty, then split it by the bit width (however many bits are
+      expected that represent one char), convert back to decimal, and decrypt with given keys. Finally print to
+      the stdout. This, character by character, decrypts the message.
+
+      Issues and resolution: Python threw a tantrum when I included the y function inline with the stdio.println
+      so I had to separate it, but this looks cleaner anyways. Other than that there was no real issues.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

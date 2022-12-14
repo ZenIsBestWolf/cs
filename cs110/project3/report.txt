@@ -1,0 +1,61 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<5>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Generating the Waltz)
+      Approach: Convert the mozart.txt into two 2D arrays to operate on,
+      follow instructions on generating random minuets & trios, and finally
+      printing it all out.
+
+      Issues and resolution: Lists begin at 0 while the minimum value for the dice role
+      for minuets was 2, meaning 12 was out of bounds. I forgot this initially, and had to subtract
+      2 from the lookup to make sure the correct minuet was selected. The same goes for the trios
+      but it was only 1, since the minimum role was 1.
+
+      After initial submission, we were told how and why to avoid global code, so I rewrote it to avoid it,
+      and it's significantly cleaner code, and made Play Waltz significantly easier too.
+
+      After feedback from Project 2, I commented my code better to provide more details on the functions.
+
+   Problem 2 (Playing the Waltz)
+      Approach: Reconstruct the provided string of ints into a list,
+      then break those up into two lists of minuets (the first 16) and
+      trios (the second 16).
+
+      Issues and resolution: Surprisingly no issues arose from this as it was relatively straightforward.
+      I had already done this reconstruction in generatewaltz.py, but slightly modified, then it was
+      simply iterating on the lists with the stdaudio.playFile function.
+
+      After initial submission, we were told how and why to avoid global code, rewrote the function to
+      intake a better formatted output from generatewaltz.py that cleaned up the code significantly.
+
+      After that submission, we learned about splicing shorthands (via the practice test) and I decided to
+      rewrite my code again, to use less logic and rely on splicing in order to be (slightly) more efficient.
+
+      And then after that, I better commented my code (from feedback on Project 2).
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   This assignment looked a lot scarier than it really turned out to be, but the music
+   that outputted was more often than not pleasing. Pretty cool!
+   This does a really good job of demonstrating how not global-coding is great, and having a main
+   function can be convenient.

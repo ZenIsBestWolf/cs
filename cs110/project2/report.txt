@@ -1,0 +1,82 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<4>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+   Joshua Yee         Prof/Grad    Help regarding Ramanujan Numbers
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Wind Chill)
+      Approach: Convert math to code & use if statements
+
+      Issues and resolution: None
+
+   Problem 2 (Day of the Week)
+      Approach: Convert math to code
+
+      Issues and resolution: This problem was the bane of me and took up 90% of my time with this project.
+      Eventually, after researching a separate algorithm called Zeller's, I noticed that it used floored division.
+      So when I used integer division (// instead of /) in all calculations, everything worked out.
+      This would have been really nice to know before spending so long researching the algorithm and why it might not be working...
+
+   Problem 3 (Playing Card)
+      Approach: Generate two random integers and call their respective lists to generate a card
+
+      Issues and resolution: None
+
+   Problem 4 (Root Finding)
+      Approach: Convert math to code
+
+      Issues and resolution: None
+
+   Problem 5 (Greatest Common Divisor)
+      Approach: Convert math to code
+
+      Issues and resolution: None
+
+   Problem 6 (Fibonacci Number)
+      Approach: Convert math to code
+
+      Issues and resolution: None
+
+   Problem 7 (Sum of Powers)
+      Approach: Convert math to code
+
+      Issues and resolution: None
+
+   Problem 8 (Dragon Curve)
+      Approach: Convert instructions to code
+
+      Issues and resolution: None
+
+   Problem 9 (Perfect Numbers)
+      Approach: Convert instructions to code
+
+      Issues and resolution: I ran into some issues with the range statement that were solved with integer division
+
+   Problem 10 (Ramanujan Numbers)
+      Approach: Convert instructions to code
+
+      Issues and resolution: It took me quite a while to realize I should be starting my values at their range minimums
+      but eventually figured it out. This code runs slow as sin though.
+      I needed to attend office hours to resolve this, I was creating an extra loop that was spiraling the time
+      needed wildly out of control. Thank you Professor Yee.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   Instructions for Day of Week would be helped by being amended to specify integer division/floored division.

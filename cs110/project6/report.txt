@@ -1,0 +1,109 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<12>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<5>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+   Joshua Yee         Prof         Assisted with distribution
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Markov Model Data Type)
+     Approach:
+     For the initializer, I used splicing to properly create the circular text needed for the function to work properly.
+     Then, appropriately crafted the SymbolTable (if an entry wasn't found, initialize a blank ST, and then insert)
+
+     The order function was simple, just returning the _k variable.
+
+     The kgram_freq function was also simple, after checking if the kgram exists (and returning 0 if it doesn't),
+     the sum of the frequencies of the kgram's letters are returned.
+
+     The char_freq function was similar to kgram_freq. Check that the kgram exists, check that the character exists
+     within the kgram, then if all that passes return the frequency of the character (value at it's key within kgram's ST).
+
+     The rand function uses distributed randomization based on the frequency of characters following a kgram via stdrand.discrete.
+     stdrand.discrete returns an index, so I select the appropriate letter given the index from a typecasted list of keys.
+
+     The gen function is covered in Problem 2.
+     The replace_unknown function is covered in Problem 3.
+     Relevant issues for both are in their respective problems.
+
+     Issues and resolution:
+     ALL functions + initialization took a lot of thought to figure out what the project was asking for and how to
+     appropriately incorporate it. I did a lot of rubber ducking throughout this project.
+
+     While working on Problem 3, it came to my attention that my initializer was actually completely broken.
+     All kgrams were of an order of 2, regardless of the actual specified k. I found where I had accidentally hardcoded
+     this number and replaced it appropriately.
+
+     I had no issue with the order function.
+
+     In both my kgram_freq and char_freq functions, I had initially forgotten to check if their parameters actually existed!
+     I then implemented existence checking appropriately, returning 0 if they were not 0.
+
+     I had little issue with the rand function. It did take me some time to wrap my head around how it was supposed to work,
+     but other than actually figuring it out there was no issue.
+
+
+   Problem 2 (Random Text Generator)
+     Approach:
+     In the main file: I take the required arguments, generate a markov with spliced text, and then call & print the
+     generated text. The main action happens in the gen function in the MarkovModel class.
+
+     The gen function is simple. It takes the provided text and then extends it based on the most likely next character.
+     That new character is then added onto the kgram, and the process loops to the amount of times specified.
+
+     Issues and resolution: I had no issues with this problem.
+
+   Problem 3 (Noisy Message Decoder)
+     Approach:
+     In the main file: I take the required arguments, generate a markov, and run & print the MarkovModel replace_unknown function.
+
+     In the actual replace_unknown function is much more complex of course.
+     First I generated a kgram behind and a kgram infront of the corrupted character, these are used to determine how "logical"
+     a replacement character will be.
+     Next I make two lists. First, probabilities, which is empty, and will store the probabilities of each appropriate potential character.
+     The second list, hypotheses, are all potential characters that could replace the corruption.
+     Next, I iterate on every entry in hypotheses (the variable appropriately being titled hypothesis).
+     In this loop I set a context string, which is what the new string would be with the current potential letter in place of the ~.
+     I also set p to 1.0. p represents this letter's probability/likelihood of being the correct letter to be in place of ~.
+     Next we iterate on a range of numbers of (where k represents the order) [0,k+1] and perform the following every iteration:
+        A kgram is created from the context string (this is shifted every iteration) and the character after it is also defined.
+        Next, a check is run to make sure that the character we are checking is actually able to come after the kgram normally,
+        and that the kgram exists at all within the MarkovModel.
+        If it does not exist: probability is set to 0 and the next iteration is jumped to. This locks probability at 0.
+        If it does exist: probability is multiplied by the probability of that character of following the kgram (char_freq/kgram_freq)
+     probability is finally appended to the probabilities list.
+     Finally, after all iterations through hypotheses, the highest probable hypothesis is appended to the original text in place
+     of the ~. This is found using _argmax, which takes the maximum value in a list and returns its index. That index corresponds
+     to the same letter in hypotheses, so it can be applied to get the correct character.
+
+     Issues and resolution:
+     In the main file I had no issues I needed to resolve.
+
+     This function, replace_unknown, was the bane of my goddamn existence. This took me the longest to debug.
+     It was three small issues that compounded to hours of debugging:
+     1. I messed up the validity checking, and it was useless.
+     2. I was getting the ~ instead of the next character in contextstring.
+     3. I was multiplying the probability by frequency, not probability.
+
+     A combination of rubber ducking to friends and chatting with Professor Yee helped me find these issues and resolve them.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   This project by far was the most difficult to understand what exactly needed to be coded in my opinion.
+   I spent most of my time figuring out how to implement the instructions and learning how to properly manipulate
+   dictionaries. I learned a lot about dictionaries and I now know how to utilize them much better.

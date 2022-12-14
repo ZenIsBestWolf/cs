@@ -1,0 +1,77 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<6>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<5>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+   Joshua Yee         Professor    Issues with euclidian distance & formatting issue
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Particle Representation)
+      Approach: Blobs are constructed with a 2D point (their center), and their mass (pixels).
+      A new blob is initialized at 0,0 with no mass.
+      Pixels can be added with coordinates, and the coordinates of the center of the blob is adjusted
+      as pixels are added using a running average and the mass is increased by one.
+      Blobs also have an additional function to find the distance between itself and another blob.
+      This is achieved with a euclidian distance formula.
+
+      Issues and resolution: The euclidian distance function was incorrectly interpreting the centers of blobs,
+      calculating distance between [x0, x1] and [y0, y1] instead of [x0, y0] and [x1, y1].
+      This was solved after presenting the issue to Professor Yee. I didn't notice the issue initially as the sample
+      calculation outputted correctly with the incorrect math for some reason.
+
+   Problem 2 (Particle Identification)
+      Approach: BlobFinder can locate blobs in an image with that are bright enough (have a minimum luminance).
+      Upon initialization, a blob finder function is called that iterates over every pixel in the image.
+      On each iteration, the function checks if the pixel exists, whether or not it's been added already,
+      and if it meets the minimum brightness. If it does not meet these requirements, the function returns.
+      If it does, then it's marked as added, and added to a list of blobs. A getter method exists in order
+      to return this list properly, also allowing filtering based off the pixel's mass.
+
+      Issues and resolution: I had some initial confusion surrounding the way of iterating along all other pixels
+      in the image. After trial and error alongside just rereading the instructions I was able to figure out
+      the math needed on the functions. I also ran into an issue with the validity checkers being too long,
+      so I split them into two different if statements.
+
+   Problem 3 (Particle Tracking)
+      Approach: The particle tracker (bead tracker) tracks the distance beads moved from one image to the next.
+      This is done with a loop, taking in the minimum mass (pixels), brightness/luminance, and maximum distance to track.
+      Finally, the function makes a list of every other argument, as they are assumed to be the pictures to check.
+      The loop operates so long as the list contains more than one image (any shorter and there would be nothing to compare).
+      Upon iteration, the two sets of beads to compare are generated, based on the current image and the image ahead of it.
+      For every bead in the current image, the distance to all other beads in the next image is checked.
+      If that distance is below the maximum & below the lowest distance found to that pixel already, it's written as the
+      new minimum. Once iterations on the second images blobs are complete, that minimum is printed to the standard output
+      (rounded to 4 digits). The next pixel in the first image is selected, and the process repeats. Once done with these images,
+      the main image is removed from the list, making the "next" one now the current one. This process repeats for all provided images.
+
+      Issues and resolution: An issue with my euclidian distance function was revealed via this method, as I was unable
+      to produce the desired output. I discussed my issues and resolution of that function in Problem 1. I also forgot
+      to put a newline after the list of distances, and fixed that after a Piazza question and answer from Professor Yee.
+
+   Problem 4 (Data Analysis)
+      Approach: Data analysis takes the list of distances from the standard input (calculated with the bead tracker) and
+      operates on it and calculates Boltzmann's and Avogadro's constant. The analysis program squares the provided distances
+      and then calculates the sum of them all. This number is then divided by 2 times the amount of distances, providing
+      sigma squared (needed for further calculations). Provided constants (ETA, RHO, T and R) are initialized appropriately.
+      Finally, the two constants are calculated appropriately and printed to the standard output.
+
+      Issues and resolution: I ran into no issues while working on this problem.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   This was the hardest by far, I'm glad I got to find a good use for the map function and a lambda function.
