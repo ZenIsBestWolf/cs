@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 # Accept weight (float) and height (float) as command-line arguments.
@@ -9,5 +9,4 @@ height = float(sys.argv[2])
 bmi = weight/(height*height)
 
 # Write bmi to standard output.
-# stdio.writeln(...)
-print(bmi)
+stdio.writeln(bmi)

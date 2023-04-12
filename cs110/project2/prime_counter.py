@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 # Accept n (int) as command-line argument.
@@ -29,4 +29,4 @@ for i in range(2, n):
         primes += 1
 
 # Write count to standard output.
-print(primes)
+stdio.writeln(primes)

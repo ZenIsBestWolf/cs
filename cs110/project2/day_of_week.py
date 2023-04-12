@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 m = int(sys.argv[1])
@@ -11,4 +11,4 @@ mO = m + 12 * ((14-m)//12) - 2
 dow = (d + xO + (31 * mO)//12) % 7
 
 days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-print(days[dow])
+stdio.writeln(days[dow])

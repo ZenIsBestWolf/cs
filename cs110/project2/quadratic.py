@@ -1,5 +1,5 @@
 import math
-# import stdio
+import stdio
 import sys
 
 # Accept a (float), b (float), and c (float) as command-line arguments.
@@ -9,7 +9,7 @@ c = float(sys.argv[3])
 
 if (a == 0):
     # If a is 0, write the message "Value of a must not be 0" to standard output.
-    print("Value of a must not be 0")
+    stdio.writeln("Value of a must not be 0")
 else:
     # Compute discriminant (b^2 - 4ac).
     discriminant = b**2 - 4*a*c
@@ -24,4 +24,4 @@ else:
         root2 = ((b*-1) - (discriminant**0.5))/2*a
 
         # Write the two roots to standard output, separated by a space.
-        print(root1, root2)
+        stdio.writeln(root1, root2)

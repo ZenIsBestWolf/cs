@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 # Accept n (int) as command-line argument.
@@ -21,8 +21,8 @@ while i <= n/i:
 
 if not tripped:
     # If you got here by exhausting the loop, n is prime. Write True to standard output.
-    print("True")
+    stdio.writeln("True")
 else:
     # If you got here by prematurely exiting the loop, n is not a prime. Write False to standard
     # output.
-    print("False")
+    stdio.writeln("False")

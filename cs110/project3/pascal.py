@@ -8,10 +8,9 @@ n = int(sys.argv[1])
 # Setup a 2D ragged list a of integers. The list must have n + 1 rows, with the ith (0 <= i
 # <= n) row a[i] having i + 1 elements, each initialized to 1. For example, if n = 3, a should be
 # initialized to [[1], [1, 1], [1, 1, 1], [1, 1, 1, 1]].
-a = stdarray.create2D(n+1, 0)
+a = stdarray.create2D(n+1, None)
 for i in range(n+1):
-    for _ in range(i+1):
-        a[i].append(1)
+    a[i].append(stdarray.create1D(i + 1, 1))
 
 # Fill the ragged list a using the formula for Pascal's triangle
 #     a[i][j] = a[i - 1][j - 1] + a[i - 1][j]

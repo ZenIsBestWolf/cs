@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 k = int(sys.argv[1])
@@ -10,4 +10,4 @@ while abs(1-c/t**k) > epsilon:
     a = t**k - c
     b = k*t**(k-1)
     t = t - a/b
-print(t)
+stdio.writeln(t)

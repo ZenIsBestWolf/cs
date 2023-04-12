@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 # Accept n (int) as command-line argument.
@@ -12,4 +12,4 @@ for i in range(2, n+1):
     result *= i
 
 # Write result to standard output.
-print(result)
+stdio.writeln(result)

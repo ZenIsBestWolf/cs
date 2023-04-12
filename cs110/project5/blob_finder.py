@@ -54,7 +54,7 @@ class BlobFinder:
 
         # Recursively call self._findBlob() on the N, E, W, S pixels.
         self._findBlob(pic, tau, i, j - 1, marked, blob)  # North
-        self._findBlob(pic, tau, i + 1, j, marked, blob)  # East
+        self._findBlob(pic, tau, i - 1, j, marked, blob)  # East
         self._findBlob(pic, tau, i + 1, j, marked, blob)  # West
         self._findBlob(pic, tau, i, j + 1, marked, blob)  # South
 

@@ -1,10 +1,8 @@
-# import stdio
-# import stdrandom
-import random
+import stdio
+import stdrandom
 
 # Set value to a random integer from [1, 6].
-# value = stdrandom.uniformInt(..., ...)
-value = random.randint(1, 6)
+value = stdrandom.uniformint(1, 7)
 # Set output to the empty string.
 output = ""
 
@@ -25,4 +23,4 @@ else:
     output = "Error"
 
 # Write output to standard output.
-print(output)
+stdio.writeln(output)

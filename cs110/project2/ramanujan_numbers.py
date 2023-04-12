@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 n = int(sys.argv[1])
@@ -18,7 +18,7 @@ while a*a*a <= n:
                     y = str(c)
                     z = str(d)
                     # This code is ugly because of the Pycodestyle requirements
-                    print(str(part1)+" = "+w+"^3 + "+x+"^3 = "+y+"^3 + "+z+"^3")
+                    stdio.writeln(str(part1)+" = "+w+"^3 + "+x+"^3 = "+y+"^3 + "+z+"^3")
                 d += 1
             c += 1
         b += 1

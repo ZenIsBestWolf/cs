@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 n = int(sys.argv[1])
@@ -9,4 +9,4 @@ for i in range(2, n):
         if i % j == 0:
             total += j
     if total == i:
-        print(i)
+        stdio.writeln(i)

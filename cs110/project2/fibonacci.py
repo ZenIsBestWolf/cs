@@ -1,4 +1,4 @@
-# import stdio
+import stdio
 import sys
 
 n = int(sys.argv[1])
@@ -11,4 +11,4 @@ while i <= n:
     a = b
     b = temp+b
     i += 1
-print(b)
+stdio.writeln(b)
