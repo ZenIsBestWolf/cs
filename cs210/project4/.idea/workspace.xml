@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a98645d-3361-4fdc-900c-9619eec47e5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../project2_solutions/src/Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programs/src/BSTOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programs/src/ErrorHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programs/src/FibonacciSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programs/src/dsa/LinearSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../programs/src/dsa/OrderedST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Bubble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Heap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Insertion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Merge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Quick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Quick3way.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Selection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Shell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/SortOrderOfGrowth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../code/Transactions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/bubble.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/elementary_sorts_scene0.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/elementary_sorts_scene1.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/elementary_sorts_scene2.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/elementary_sorts_scene3.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/prologue_scene0.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/prologue_scene1.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/prologue_scene2.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/prologue_scene3.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/prologue_scene4.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/prologue_scene5.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/selection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sorting/sort.sh" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1eHwWYFKQmr7n6F0sK74tF0FPcb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zen/Desktop/College/cs210/project4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Solver">
+    <configuration name="Board" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Board" />
+      <module name="project4" />
+      <option name="PROGRAM_PARAMETERS" value="$Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PuzzleChecker" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PuzzleChecker" />
+      <module name="project4" />
+      <option name="PROGRAM_PARAMETERS" value="$Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solver" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solver" />
+      <module name="project4" />
+      <option name="PROGRAM_PARAMETERS" value="$Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolverVisualizer" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SolverVisualizer" />
+      <module name="project4" />
+      <option name="PROGRAM_PARAMETERS" value="$Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Board" />
+      <item itemvalue="Application.PuzzleChecker" />
+      <item itemvalue="Application.Solver" />
+      <item itemvalue="Application.SolverVisualizer" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a98645d-3361-4fdc-900c-9619eec47e5e" name="Default Changelist" comment="" />
+      <created>1593991857250</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593991857250</updated>
+      <workItem from="1679327835006" duration="18000" />
+      <workItem from="1679595075467" duration="3963000" />
+      <workItem from="1679694157280" duration="904000" />
+      <workItem from="1679801877279" duration="1798000" />
+      <workItem from="1679865716584" duration="2944000" />
+      <workItem from="1680043196808" duration="6623000" />
+      <workItem from="1680053735798" duration="3766000" />
+      <workItem from="1680116818982" duration="1074000" />
+      <workItem from="1680198879866" duration="4348000" />
+      <workItem from="1680272581923" duration="4698000" />
+      <workItem from="1680365498924" duration="6061000" />
+      <workItem from="1680451692550" duration="9035000" />
+      <workItem from="1680490607666" duration="3982000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
