@@ -1,3 +1,10 @@
-.DS_Store
-__pycache__
 # .idea folders are kept intentionally
+# macOS moment
+.DS_Store
+
+# cs110
+__pycache__
+
+# cs210
+*.class
+
