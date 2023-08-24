@@ -15,3 +15,10 @@ Use this for assistance understanding processes and to explain problems, **but t
 Code is only added after a course concludes.
 
 This repository may be updated to support multiple institutions if I transfer.
+
+**UPDATE:** I have indeed transfered institutions.
+UMass Boston coursework is found in the ``umb`` folder.
+Worcester Polytechnic Institute coursework is found in the ``wpi`` folder.
+
+New work will be added after the completion of the course, and a grade is 
+issued.
