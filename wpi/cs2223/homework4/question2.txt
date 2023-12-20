@@ -1,0 +1,1 @@
+The algorithm fails because this matrix has infinitely many solutions (the matrix is linearly dependent).
