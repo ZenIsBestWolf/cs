@@ -1,0 +1,9 @@
+Instruction? Put page table for PID 0 into physical frame 0.
+Mapped virtual address 0 (page 0) into physical frame 1.
+Instruction? Error: Virtual page already mapped into physical frame 1.
+Instruction? Mapped virtual address 16 (page 1) into physical frame 2.
+Instruction? Mapped virtual address 32 (page 2) into physical frame 3.
+Instruction? Error: virtual address 35 does not have write permissions.
+Instruction? Stored value 255 at virtual address 19 (physical address 35)
+Instruction? The value 255 was found at virtual address 19.
+Instruction? End of File.

@@ -1,0 +1,18 @@
+The core problem of WGP is managing fairness between the rugby & the other sports.
+
+Rugby's versatility in how many players it needs makes it easy for them to hog the entire field and never return it to other sports.
+This is a major problem, and it must be combatted.
+
+The way I combatted it was by introducing "respect" into rugby players. Rugby players are now aware of this fact, and will try to combat it.
+When there are just a handfull of rugby players, they don't mind letting friends join, but once they realize they've achieved a full game,
+they acknowledge that it must be the last, and they need to give everyone else a chance to play.
+
+On a technical level, two major things happen:
+First, while trying to become active, do I set the active player count to the maximum?
+    - If it is, then halt (which keeps the lock) and wait until the active player count
+    has dropped back to zero (which will be signaled), forcing a complete flush out.
+Otherwise, continue as normal.
+
+Second, while leaving, do I set the active player count to 0?
+    - If so, then fire off the "empty" signal to resume a normal queueing process.
+Otherwise, continue as normal.

@@ -1,0 +1,46 @@
+TEAMS:
+- Rugby: 60 players (4 teams of 15)
+- Baseball: 36 players (4 teams of 9)
+- Football: 44 players (4 teams of 11)
+
+BASEBALL: EXACTLY 18
+- Baseball requires exactly 18 players.
+- If there are not enough players, none will take the field.
+- Game length must be agreed upon (although should be random)
+
+
+FOOTBALL: EXACTLY 22
+- Football requires 22 players to be available
+- If there are not enough players, none will take the field.
+- Game length must be agreed upon (although should be random)
+
+RUGBY: MAX 30 MIN 2 Even Only
+- Teams can range from 1 to 15 players (2 to 30 players at any time)
+- Rugby can be joined ad-hoc by any even number of rugby players at a time.
+- Any pair of rugby players can leave when they choose to, until the field
+is empty.
+
+
+FIELD RESTRICTIONS:
+- One sport at a time can play.
+- Two teams of one sport will play.
+- Fairness is important. Rugby cannot block everyone else!
+
+TECHNICAL DETAILS:
+- Each thread represents a single player.
+- Use semaphores or combination of mutexes and condition variables to
+synchronize the field
+- Each player thread should identify itself by name or number, and player type,
+and which field slot (1 to the field limit) it is occupying when it enters
+and exits the field.
+- "Gameplay" is performed via the sleep() system call for the whole team to
+emulate the sport, but can be on a pair for rugby players.
+- The beginning of a thread should use a randomly timed sleep() system call
+to emulate players arriving at different times.
+- The player can either compete only twice, or run infinitely.
+- A player should only return to the ready state after waiting a random period of time
+after their competition (simulate a resting period)
+- Students do not need to keep track of which players are on which teams.
+- Do not keep track of teams at all.
+- Explain how the solution avoids the starvation problem in a text file
+titled "problem_explanation.txt" along with the sourcecode.
